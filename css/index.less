@@ -183,12 +183,12 @@ header{
 		padding-left: 62/@rem;
 		background: url("../img/new.png") no-repeat;
 		background-size: 62/@rem 100%;
+		overflow: hidden;
 	}
 	ul{
-		height: 100%;
 
 		li{
-			height: 100%;
+			height: @topline-height;
 		}
 		a{
 			display: block;
@@ -416,6 +416,7 @@ footer{
 	right: 0;
 	bottom: @wrap-bottom;
 	z-index: 100;
+	//overflow: hidden;
 }
 .scrollbar{
 	position: absolute;
@@ -428,4 +429,40 @@ footer{
 	visibility: hidden;
 	opacity: .6;
 }
+.footer{
+    width: 10rem;
+    border-top: 1px solid #292c33;
+    background-color: #4E525E;
+    box-sizing: border-box;
+    padding: 0.5625rem 0.25rem;
 
+    .buttons{
+    	display: flex;
+    	justify-content: space-between;
+    	text-align: justify;
+
+    	a{
+    		display: inline-block;
+		    height: 0.9375rem;
+		    line-height: 0.9375rem;
+		    color: #c3c6ca;
+		    border: 2px solid #42454d;
+		    background-color: #555965;
+		    padding: 0 0.43875rem;
+    		border-radius: 12px;
+    		font-size: 24/@rem;
+    	}
+    }
+}
+
+.gotop{
+	width: 60/@rem;
+	height: 60/@rem;
+	position: absolute;
+	bottom: 10/@rem;
+	right: 10/@rem;	
+	background: url(../img/gotop.png) no-repeat;
+	background-size: 100%;
+	display: none;
+	z-index: 10;
+}

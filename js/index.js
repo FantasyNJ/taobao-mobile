@@ -89,6 +89,8 @@ var likeData = [
     banner.addEventListener('touchstart', function(e){
         clearInterval(timer);
         list.style.transition = 'none';
+        //清除速度，防止点击的时候速度还存在
+        distanceX = distanceTime = 0;
 
         lastX = 0;
         lastTime = Date.now();
@@ -134,7 +136,6 @@ var likeData = [
         }else{
             now = Math.round(- transX / banner.clientWidth);
         }
-
         tab();
         autoPlay();
         e.stopPropagation();
@@ -174,6 +175,7 @@ var likeData = [
 (function(){
     var wrap = document.querySelector('.wrap');
     var content = document.querySelector('.content');
+    var gotop = document.querySelector('.gotop');
     var img = document.querySelectorAll('.like-list .img');  //图片
     imgArr = Array.prototype.slice.call(img);
     var startPoint = 0;
@@ -183,9 +185,11 @@ var likeData = [
     var lastTime = 0;
     var distanceY = 0;
     var distanceTime = 0;
+    var timer = null;  //返回顶部计时器
 
     content.addEventListener('touchstart', function(e){
         clearInterval(this.timer);
+        clearInterval(timer);
         transY = css(content, 'translateY');
         startPoint = e.changedTouches[0].pageY;
         lastTime = Date.now();
@@ -247,6 +251,23 @@ var likeData = [
             movejs(scrollbar, {top: -transY/content.offsetHeight*wrap.clientHeight}, 800, transition,function(){
                 scrollbar.style.visibility = 'hidden';
             });
+            //返回顶部检测
+            var n = 0;
+            var allN = 800 / 40;
+            timer = setInterval(function(){
+                n++;
+                
+                var top = css(content, 'translateY');
+                if(top < -500){
+                    gotop.style.display = 'block';
+                }else{
+                    gotop.style.display = 'none';
+                }
+
+                if(n === allN){
+                    clearInterval(timer);
+                }
+            },40)
         }else{
             //点击的情况直接隐藏
             scrollbar.style.visibility = 'hidden';
@@ -304,4 +325,60 @@ var likeData = [
             window.location = this.getAttribute('data-href');
         }
     })
+})();
+
+//头条内容轮播
+(function(){
+    var ul = document.querySelector('.topline-list');
+    var li = document.querySelectorAll('.topline-list li');
+    var liHeight = li[0].offsetHeight;
+    var n = 0;
+
+    var timer = setInterval(function(){
+        n++;
+        if(n >= li.length){
+            n = 0;
+        }
+        css(ul , 'translateY', -n*liHeight);
+    }, 3000);
+})();
+//返回顶部
+(function(){
+    var gotop = document.querySelector('.gotop');
+    var wrap = document.querySelector('.wrap');
+    var content = document.querySelector('.content');
+    var scrollbar = document.querySelector('.scrollbar');
+    var startX = 0;
+    var startY = 0;
+
+    content.addEventListener('touchmove', function(){
+        var top = css(content, 'translateY');
+        if(top < -500){
+            gotop.style.display = 'block';
+        }else{
+            gotop.style.display = 'none';
+        }
+    });
+
+    gotop.addEventListener('touchstart', function(e){
+        startX = e.changedTouches[0].pageX;
+        startY = e.changedTouches[0].pageY;
+    })
+
+    gotop.addEventListener('touchend', function(e){
+        var nowX = e.changedTouches[0].pageX;
+        var nowY = e.changedTouches[0].pageY;
+
+        if(nowX === startX && nowY === startY){
+            movejs(content, {translateY: 0}, 500, 'linear', function(){
+                gotop.style.display = 'none';
+            })
+            //滚动条
+            scrollbar.style.visibility = 'visible';
+            movejs(scrollbar, {top: 0}, 500, 'linear',function(){
+                scrollbar.style.visibility = 'hidden';
+            });
+        }
+    })
+
 })();

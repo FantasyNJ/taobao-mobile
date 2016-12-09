@@ -1,6 +1,8 @@
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\000032}}
 html {
   font-family: Helvetica sans-serif;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\000033}}
 body,
 h1,
 h2,
@@ -14,51 +16,62 @@ dd {
   margin: 0;
   -webkit-text-size-adjust: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\000037}}
 ul,
 ol {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\000038}}
 img {
   vertical-align: top;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\000039}}
 a {
   text-decoration: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000310}}
 input {
   vertical-align: top;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000311}}
 a,
 input,
 button {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-appearance: none;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000315}}
 a,
 span,
 p {
   line-height: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000316}}
 .ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000321}}
 .clearfix:before {
   display: table;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000324}}
 .clearfix:after {
   content: " ";
   display: table;
   clear: both;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000331}}
 html,
 body {
   height: 100%;
   position: relative;
   overflow: hidden;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000339}}
 .wrap {
   position: absolute;
   overflow: hidden;
@@ -66,6 +79,7 @@ body {
   top: 0.87037037rem;
   bottom: 0.96296296rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000349}}
 header {
   width: 100%;
   padding: 0.14814815rem 0.2037037rem 0.14814815rem 0.83333333rem;
@@ -79,10 +93,12 @@ header {
   top: 0;
   z-index: 10;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000365}}
 .search {
   width: 100%;
   height: 0.59259259rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000368}}
 .search input {
   width: 100%;
   padding: 0;
@@ -95,19 +111,23 @@ header {
   font-size: 0.2962963rem;
   line-height: 0.59259259rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000374}}
 ::-webkit-input-placeholder {
   color: #fffcda;
   font-size: 0.2962963rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000376}}
 .content {
   width: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000379}}
 .banner {
   height: 3.12962963rem;
   background-color: red;
   position: relative;
   overflow: hidden;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000385}}
 .banner .list {
   width: 1200%;
   height: 100%;
@@ -115,25 +135,30 @@ header {
   left: 0;
   top: 0;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000392}}
 .banner .list li {
   width: 10rem;
   height: 100%;
   float: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000397}}
 .banner .list a {
   display: block;
   height: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003101}}
 .banner .list img {
   width: 100%;
   height: 100%;
   display: block;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003108}}
 .banner nav {
   position: absolute;
   right: 0;
   bottom: 10px;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003113}}
 .banner nav span {
   width: 0.18518519rem;
   height: 0.18518519rem;
@@ -144,39 +169,48 @@ header {
   background: #ccc;
   opacity: .7;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003118}}
 .banner nav .active {
   background: #fe5400;
   opacity: 1;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003125}}
 .make {
   height: 3.11111111rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003128}}
 .make a {
   display: block;
   height: 100%;
   background: url("../img/make.jpg") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003136}}
 .proc {
   padding-top: 0.14814815rem;
   padding-bottom: 0.18518519rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003140}}
 .proc a {
   display: block;
   height: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003145}}
 .proc .proc-row {
   height: 1.81481481rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003148}}
 .proc .proc-row .proc-col {
   width: 20%;
   height: 100%;
   float: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003153}}
 .proc .proc-row .proc-img {
   height: 1.37037037rem;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003157}}
 .proc .proc-row p {
   text-align: center;
   font-size: 0.2962963rem;
@@ -184,9 +218,11 @@ header {
   height: 0.46296296rem;
   line-height: 0.46296296rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003167}}
 .sec-bor {
   border-bottom: 0.16666667rem solid #eeeeee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003172}}
 .topline {
   height: 0.74074074rem;
   border-top: 1px solid #eee;
@@ -195,6 +231,7 @@ header {
   background-position: 0 0.14814815rem;
   background-size: 2.16666667rem 0.74074074rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003180}}
 .topline .topline-wrap {
   height: 100%;
   border-left: 1px solid #eee;
@@ -203,18 +240,22 @@ header {
   background-size: 1.14814815rem 100%;
   overflow: hidden;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003190}}
 .topline ul li {
   height: 0.74074074rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003193}}
 .topline ul a {
   display: block;
   font-size: 0.2962963rem;
   height: 100%;
   line-height: 0.74074074rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003202}}
 .qg {
   height: 5.01851852rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003205}}
 .qg .qg-l {
   width: 3.81481481rem;
   height: 100%;
@@ -224,12 +265,14 @@ header {
   background: url("../img/qg-1.jpg") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003214}}
 .qg .qg-r {
   width: 6.18518519rem;
   height: 100%;
   float: left;
   box-sizing: border-box;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003221}}
 .qg .qg-l-t {
   width: 100%;
   height: 2.31481481rem;
@@ -238,9 +281,11 @@ header {
   background: url("../img/qg-2.jpg") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003229}}
 .qg .qg-l-b {
   height: 2.68518519rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003232}}
 .qg .qg-l-b-l {
   width: 50%;
   height: 100%;
@@ -249,6 +294,7 @@ header {
   background: url("../img/qg-3.jpg") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003240}}
 .qg .qg-l-b-r {
   width: 50%;
   height: 100%;
@@ -258,24 +304,29 @@ header {
   background: url("../img/qg-4.jpg") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003252}}
 .con-wrap .con-row {
   height: 2.92592593rem;
   border-top: 1px solid #eee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003256}}
 .con-wrap .col {
   height: 100%;
   float: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003260}}
 .con-wrap .con-col1 {
   width: 3.81481481rem;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003264}}
 .con-wrap .con-col2 {
   width: 2.05555556rem;
   box-sizing: border-box;
   border-left: 1px solid #eee;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003274}}
 .economy .title,
 .goods .title,
 .like .title {
@@ -284,6 +335,7 @@ header {
   line-height: 1;
   height: 0.42592593rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003280}}
 .economy .title span,
 .goods .title span,
 .like .title span {
@@ -296,58 +348,72 @@ header {
   font-size: 0.2962963rem;
   background-size: 0.42592593rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003293}}
 .economy span {
   background: url("../img/economy.png") no-repeat;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003298}}
 .goods span {
   background: url("../img/goods.png") no-repeat;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003302}}
 .like {
   background-color: #eee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003304}}
 .like .title {
   height: 1.2962963rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003306}}
 .like .title span {
   background: url("../img/like.png") no-repeat;
   color: #333333;
   background-size: 0.42592593rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003311}}
 .like .title p {
   font-size: 0.2962963rem;
   margin-top: -0.2962963rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003317}}
 .like-list {
   background-color: #eee;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003320}}
 .like-list li {
   width: 49.5%;
   height: 6.66666667rem;
   background-color: #fff;
   margin-bottom: 0.16666667rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003326}}
 .like-list li:nth-of-type(odd) {
   float: left;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003329}}
 .like-list li:nth-of-type(even) {
   float: right;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003333}}
 .like-list .img {
   height: 4.62962963rem;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003337}}
 .like-list .name {
   box-sizing: border-box;
   font-size: 0.22222222rem;
   color: #666666;
   margin: 0.188rem 0.313rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003343}}
 .like-list .price {
   box-sizing: border-box;
   color: #ff5000;
   font-size: 0.40740741rem;
   text-indent: 0.313rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003351}}
 footer {
   width: 100%;
   height: 0.81481481rem;
@@ -359,44 +425,53 @@ footer {
   border-top: 3px solid #ccc;
   z-index: 10;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003362}}
 footer a {
   display: block;
   width: 20%;
   float: left;
   height: 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003368}}
 footer a span {
   display: block;
   width: 0.44444444rem;
   height: 0.5rem;
   margin: 0 auto;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003375}}
 footer a:nth-of-type(1) span {
   background: url("../img/a-1.png") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003381}}
 footer a:nth-of-type(2) span {
   background: url("../img/a-2.png") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003387}}
 footer a:nth-of-type(3) span {
   background: url("../img/a-3.png") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003393}}
 footer a:nth-of-type(4) span {
   background: url("../img/a-4.png") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003399}}
 footer a:nth-of-type(5) span {
   background: url("../img/a-5.png") no-repeat;
   background-size: 100% 100%;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003404}}
 footer a p {
   text-align: center;
   font-size: 0.25925926rem;
   height: 0.2962963rem;
   line-height: 0.2962963rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003412}}
 .scroll {
   position: absolute;
   width: .1rem;
@@ -405,6 +480,7 @@ footer a p {
   bottom: 0.96296296rem;
   z-index: 100;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003421}}
 .scrollbar {
   position: absolute;
   width: 100%;
@@ -416,6 +492,7 @@ footer a p {
   visibility: hidden;
   opacity: .6;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003432}}
 .footer {
   width: 10rem;
   border-top: 1px solid #292c33;
@@ -423,11 +500,13 @@ footer a p {
   box-sizing: border-box;
   padding: 0.5625rem 0.25rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003439}}
 .footer .buttons {
   display: flex;
   justify-content: space-between;
   text-align: justify;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003444}}
 .footer .buttons a {
   display: inline-block;
   height: 0.9375rem;
@@ -439,6 +518,7 @@ footer a p {
   border-radius: 12px;
   font-size: 0.44444444rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\00003458}}
 .gotop {
   width: 1.11111111rem;
   height: 1.11111111rem;

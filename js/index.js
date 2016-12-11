@@ -48,6 +48,7 @@ var likeData = [
         price: 68
     }
 ];
+//渲染数据
 (function(){
     var list = document.querySelector('.like-list');
     var sHtml = '';
@@ -56,7 +57,6 @@ var likeData = [
         likeData = likeData.concat(likeData);
     }
     likeData.forEach(function(item, index){
-        //var name =
         sHtml += '<li><div class="img"></div><div class="name">'+item.name+'</div><div class="price">￥ '+(item.price)+'</div></li>';
     });
     list.innerHTML = sHtml;
@@ -186,6 +186,8 @@ var likeData = [
     var distanceY = 0;
     var distanceTime = 0;
     var timer = null;  //返回顶部计时器
+
+    css(content, 'translateZ', 0.01);
 
     content.addEventListener('touchstart', function(e){
         clearInterval(this.timer);

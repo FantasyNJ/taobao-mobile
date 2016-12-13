@@ -9,11 +9,17 @@
     <meta name="x5-orientation" content="portrait">
     <script>
         (function(){
-            var scale = 1/window.devicePixelRatio;
-            document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=yes" />');
-            var aFz = document.querySelector("html");
-            var fz = aFz.getBoundingClientRect().width / 10;
-            aFz.style.fontSize = fz + "px";
+            resize();
+            window.addEventListener('resize', function(){
+                window.location.reload();
+            })
+            function resize(){
+                var scale = 1/window.devicePixelRatio;
+                document.write('<meta name="viewport" content="width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=yes" />');
+                var aFz = document.querySelector("html");
+                var fz = aFz.getBoundingClientRect().width / 10;
+                aFz.style.fontSize = fz + "px";
+            }
         })()
     </script>
 	<link rel="stylesheet" href="dist/index.min.css">

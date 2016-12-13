@@ -384,3 +384,17 @@ var likeData = [
     })
 
 })();
+// //改变窗口大小,淘宝头条，滚动条高度都要改，废弃，直接刷新
+// (function(){
+//     window.addEventListener('resize', function(){
+//         var scale = 1/window.devicePixelRatio;
+//         var viewport = document.querySelector('meta[name=viewport]');
+//         viewport.content = "width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=yes";
+//         var aFz = document.querySelector("html");
+//         var fz = aFz.getBoundingClientRect().width / 10;
+//         aFz.style.fontSize = fz + "px";
+//         aFz.style.width = '100%';
+//         aFz.style.height = '100%';
+//         aFz.style.overflow = 'hidden';
+//     });
+// })();

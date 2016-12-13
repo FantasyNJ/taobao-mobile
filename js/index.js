@@ -1,6 +1,28 @@
 document.addEventListener('touchstart', function(e){
     e.preventDefault();
 });
+//改变窗口大小,淘宝头条，滚动条高度都要改，废弃，直接刷新
+(function(){
+    window.addEventListener('resize', function(){
+        var scale = 1/window.devicePixelRatio;
+        var viewport = document.querySelector('meta[name=viewport]');
+        viewport.content = '"width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=yes"';
+        var aFz = document.querySelector("html");
+        var fz = aFz.getBoundingClientRect().width / 10;
+        aFz.style.fontSize = fz + "px";
+        aFz.style.width = '100%';
+        aFz.style.height = '100%';
+        aFz.style.overflow = 'hidden';
+
+        var content = document.querySelector('.content');
+        var wrap = document.querySelector('.wrap');
+        var Y = css(content, 'translateY');
+        if(Y < wrap.clientHeight - content.offsetHeight ){
+            Y = wrap.clientHeight - content.offsetHeight;
+            css(content, 'translateY', Y);
+        }
+    });
+})();
 //为导航添加背景图片
 (function(){
     var aProcImgs = document.querySelectorAll('.proc-img');
@@ -66,7 +88,6 @@ var likeData = [
         img[i].setAttribute('bg-src', 'url("img/like-'+(i%len+1)+'.jpg")');
     }
 })();
-
 //轮播图
 (function(){
     var banner = document.querySelector(".banner");
@@ -170,7 +191,6 @@ var likeData = [
         list.style.WebkitTransform = list.style.transform = 'translateX('+transX+'px)';
     }
 })();
-
 //滑屏
 (function(){
     var wrap = document.querySelector('.wrap');
@@ -292,11 +312,19 @@ var likeData = [
 })();
 //自定义滚动条
 (function(){
+    resize();
+    window.addEventListener('resize', resize);
+    function resize(){
+        var wrap = document.querySelector('.wrap');
+        var content = document.querySelector('.content');
+        var scrollbar = document.querySelector('.scrollbar');
+        var per = Math.round(wrap.clientHeight / content.offsetHeight * 100);
+        scrollbar.style.height = per+'%';
+    }
+
     var wrap = document.querySelector('.wrap');
     var content = document.querySelector('.content');
     var scrollbar = document.querySelector('.scrollbar');
-    var per = Math.round(wrap.clientHeight / content.offsetHeight * 100);
-    scrollbar.style.height = per+'%';
 
     content.addEventListener('touchstart', function(e){
         clearInterval(scrollbar.timer);
@@ -328,21 +356,28 @@ var likeData = [
         }
     })
 })();
-
 //头条内容轮播
-(function(){
-    var ul = document.querySelector('.topline-list');
-    var li = document.querySelectorAll('.topline-list li');
-    var liHeight = li[0].offsetHeight;
-    var n = 0;
+(function (){
+    var timer = null;
 
-    var timer = setInterval(function(){
-        n++;
-        if(n >= li.length){
-            n = 0;
-        }
-        css(ul , 'translateY', -n*liHeight);
-    }, 3000);
+    resize();
+    window.addEventListener('resize', resize);
+    function resize(){
+        var ul = document.querySelector('.topline-list');
+        var li = document.querySelectorAll('.topline-list li');
+        var liHeight = li[0].offsetHeight;
+        var n = 0;
+
+        clearInterval(timer);
+        timer = setInterval(function(){
+            console.log(1);
+            n++;
+            if(n >= li.length){
+                n = 0;
+            }
+            css(ul , 'translateY', -n*liHeight);
+        }, 3000);
+    }
 })();
 //返回顶部
 (function(){
@@ -384,17 +419,3 @@ var likeData = [
     })
 
 })();
-// //改变窗口大小,淘宝头条，滚动条高度都要改，废弃，直接刷新
-// (function(){
-//     window.addEventListener('resize', function(){
-//         var scale = 1/window.devicePixelRatio;
-//         var viewport = document.querySelector('meta[name=viewport]');
-//         viewport.content = "width=device-width,initial-scale='+scale+',minimum-scale='+scale+',maximum-scale='+scale+',user-scalable=yes";
-//         var aFz = document.querySelector("html");
-//         var fz = aFz.getBoundingClientRect().width / 10;
-//         aFz.style.fontSize = fz + "px";
-//         aFz.style.width = '100%';
-//         aFz.style.height = '100%';
-//         aFz.style.overflow = 'hidden';
-//     });
-// })();

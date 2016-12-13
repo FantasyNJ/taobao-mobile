@@ -123,7 +123,6 @@ header {
 @media -sass-debug-info{filename{font-family:file\:\/\/E\:\/xampp\/www\/taobao\/css\/index\.less}line{font-family:\0000379}}
 .banner {
   height: 3.12962963rem;
-  background-color: red;
   position: relative;
   overflow: hidden;
 }
